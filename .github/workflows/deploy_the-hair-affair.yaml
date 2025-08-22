@@ -13,8 +13,7 @@ jobs:
       - uses: actions/checkout@v4
         # Copy directory so tar doesn't attempt to create an archive inside itself
       - run: |
-          cp -R . ./__input_files
-          tar -czf output.tar.gz --exclude='./.git' -C ./__input_files .
+          tar -czf ${{ runner.temp }}/output.tar.gz --exclude='./.git' -C . .
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
