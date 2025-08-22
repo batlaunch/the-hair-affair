@@ -11,8 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        # Copy directory so tar doesn't attempt to create an archive inside itself
       - run: |
-          tar -czf output.tar.gz --exclude='./output.tar.gz' --exclude='./.git' -C . .
+          cp -R . ./__input_files
+          tar -czf output.tar.gz --exclude='./.git' -C ./__input_files .
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
