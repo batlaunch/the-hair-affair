@@ -19,7 +19,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: output
-          path: output.tar.gz
+          path: ${{ runner.temp }}/output.tar.gz
 
   deploy:
     needs: build
