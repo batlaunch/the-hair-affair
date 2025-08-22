@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          tar -czf output.tar.gz -C . .
+          tar -czf output.tar.gz --exclude='./output.tar.gz' --exclude='./.git' -C . .
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
