@@ -1,10 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>The Hair Affair</title>
-	</head>
-	<body>
-		<h1>The Hair Affair test 3!</h1>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hair Affair - Professional hair salon with 40+ years of experience. Quality hair services, styling, and treatments.">
+    <title>Hair Affair - Professional Hair Salon</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip to main content link for screen readers -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header with Navigation -->
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <!-- Logo placeholder -->
+                <div class="logo-container">
+                    <!-- LOGO PLACEHOLDER: Insert Hair Affair logo here - should be approximately 150px wide, transparent background preferred -->
+                    <h1 class="logo-text">Hair Affair</h1>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <ul class="nav-menu" role="menubar">
+                    <li role="none"><a href="#home" role="menuitem" aria-current="page">Home</a></li>
+                    <li role="none"><a href="#services" role="menuitem">Services</a></li>
+                    <li role="none"><a href="#about" role="menuitem">About</a></li>
+                    <li role="none"><a href="#team" role="menuitem">Our Team</a></li>
+                    <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+                </ul>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+                <ul role="menu">
+                    <li role="none"><a href="#home" role="menuitem">Home</a></li>
+                    <li role="none"><a href="#services" role="menuitem">Services</a></li>
+                    <li role="none"><a href="#about" role="menuitem">About</a></li>
+                    <li role="none"><a href="#team" role="menuitem">Our Team</a></li>
+                    <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section id="home" class="hero" aria-labelledby="hero-heading">
+            <div class="hero-content">
+                <!-- HERO IMAGE PLACEHOLDER: Large hero image showing the salon interior or a stylish hair transformation - should be high quality, 1920x800px recommended -->
+                <div class="hero-text">
+                    <h1 id="hero-heading">Welcome to Hair Affair</h1>
+                    <p class="hero-subtitle">40+ Years of Excellence in Hair Care</p>
+                    <p class="hero-description">Experience professional hair styling and treatments in a welcoming atmosphere. Our skilled team has been serving the community with passion and expertise.</p>
+                    <a href="#services" class="cta-button" aria-describedby="cta-description">
+                        Explore Our Services
+                        <span id="cta-description" class="sr-only">View our complete list of hair services and pricing</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services" aria-labelledby="services-heading">
+            <div class="container">
+                <h2 id="services-heading">Our Services</h2>
+                <p class="section-subtitle">Professional hair care tailored to your unique style</p>
+                
+                <div class="services-grid">
+                    <!-- Service items will be populated with actual services and pricing -->
+                    <article class="service-card">
+                        <!-- SERVICE IMAGE PLACEHOLDER: Image of hair cutting/styling in action - 400x300px -->
+                        <div class="service-image-placeholder"></div>
+                        <div class="service-content">
+                            <h3>Hair Cuts & Styling</h3>
+                            <p>Professional cuts and styling for all hair types. From classic to contemporary looks.</p>
+                            <div class="service-pricing">
+                                <span class="price-label">Starting at:</span>
+                                <span class="price">$XX</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <!-- SERVICE IMAGE PLACEHOLDER: Image of hair coloring process - 400x300px -->
+                        <div class="service-image-placeholder"></div>
+                        <div class="service-content">
+                            <h3>Hair Coloring</h3>
+                            <p>Expert color services including highlights, lowlights, and full color transformations.</p>
+                            <div class="service-pricing">
+                                <span class="price-label">Starting at:</span>
+                                <span class="price">$XX</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <!-- SERVICE IMAGE PLACEHOLDER: Image of hair treatment being applied - 400x300px -->
+                        <div class="service-image-placeholder"></div>
+                        <div class="service-content">
+                            <h3>Hair Treatments</h3>
+                            <p>Nourishing treatments to restore and maintain healthy, beautiful hair.</p>
+                            <div class="service-pricing">
+                                <span class="price-label">Starting at:</span>
+                                <span class="price">$XX</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <!-- SERVICE IMAGE PLACEHOLDER: Image of special occasion styling - 400x300px -->
+                        <div class="service-image-placeholder"></div>
+                        <div class="service-content">
+                            <h3>Special Occasions</h3>
+                            <p>Elegant updos and styling for weddings, proms, and special events.</p>
+                            <div class="service-pricing">
+                                <span class="price-label">Starting at:</span>
+                                <span class="price">$XX</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Full Services & Pricing Note -->
+                <div class="services-note">
+                    <p><strong>Note:</strong> Complete services and pricing list will be inserted here based on the provided image of products and services.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 id="about-heading">About Hair Affair</h2>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number">40+</span>
+                                <span class="stat-label">Years in Business</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">10</span>
+                                <span class="stat-label">Years Current Ownership</span>
+                            </div>
+                        </div>
+                        <p class="about-description">
+                            Hair Affair has been a cornerstone of the community for over four decades, providing exceptional hair care services with a commitment to quality and customer satisfaction. Under current ownership for the past 10 years, we continue to uphold the tradition of excellence while embracing modern techniques and trends.
+                        </p>
+                        <p class="about-description">
+                            Our experienced team of stylists is dedicated to helping you achieve your perfect look, whether you're seeking a subtle refresh or a dramatic transformation. We believe that great hair is the best accessory, and we're here to help you wear it with confidence.
+                        </p>
+                    </div>
+                    <div class="about-image">
+                        <!-- ABOUT IMAGE PLACEHOLDER: Professional photo of the salon interior or owner - 600x400px, should convey warmth and professionalism -->
+                        <div class="about-image-placeholder"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="team" aria-labelledby="team-heading">
+            <div class="container">
+                <h2 id="team-heading">Meet Our Team</h2>
+                <p class="section-subtitle">Skilled professionals dedicated to your hair care needs</p>
+                
+                <div class="team-grid">
+                    <!-- Employee 1 -->
+                    <article class="team-member">
+                        <div class="member-photo-container">
+                            <!-- EMPLOYEE PHOTO PLACEHOLDER: Professional headshot of team member - 300x300px, square format -->
+                            <div class="member-photo" role="img" aria-label="Team member photo"></div>
+                            <div class="member-quote" role="tooltip">
+                                <blockquote>
+                                    <p>"Insert inspiring quote from team member about their passion for hair styling and client care."</p>
+                                    <cite>- Team Member Name</cite>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Team Member Name</h3>
+                            <p class="member-title">Senior Stylist</p>
+                            <p class="member-experience">X years experience</p>
+                        </div>
+                    </article>
+
+                    <!-- Employee 2 -->
+                    <article class="team-member">
+                        <div class="member-photo-container">
+                            <!-- EMPLOYEE PHOTO PLACEHOLDER: Professional headshot of team member - 300x300px, square format -->
+                            <div class="member-photo" role="img" aria-label="Team member photo"></div>
+                            <div class="member-quote" role="tooltip">
+                                <blockquote>
+                                    <p>"Insert inspiring quote from team member about their expertise and dedication to clients."</p>
+                                    <cite>- Team Member Name</cite>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Team Member Name</h3>
+                            <p class="member-title">Color Specialist</p>
+                            <p class="member-experience">X years experience</p>
+                        </div>
+                    </article>
+
+                    <!-- Employee 3 -->
+                    <article class="team-member">
+                        <div class="member-photo-container">
+                            <!-- EMPLOYEE PHOTO PLACEHOLDER: Professional headshot of team member - 300x300px, square format -->
+                            <div class="member-photo" role="img" aria-label="Team member photo"></div>
+                            <div class="member-quote" role="tooltip">
+                                <blockquote>
+                                    <p>"Insert inspiring quote from team member about their approach to hair care and client relationships."</p>
+                                    <cite>- Team Member Name</cite>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Team Member Name</h3>
+                            <p class="member-title">Stylist</p>
+                            <p class="member-experience">X years experience</p>
+                        </div>
+                    </article>
+
+                    <!-- Employee 4 -->
+                    <article class="team-member">
+                        <div class="member-photo-container">
+                            <!-- EMPLOYEE PHOTO PLACEHOLDER: Professional headshot of team member - 300x300px, square format -->
+                            <div class="member-photo" role="img" aria-label="Team member photo"></div>
+                            <div class="member-quote" role="tooltip">
+                                <blockquote>
+                                    <p>"Insert inspiring quote from team member about their skills and commitment to excellence."</p>
+                                    <cite>- Team Member Name</cite>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Team Member Name</h3>
+                            <p class="member-title">Junior Stylist</p>
+                            <p class="member-experience">X years experience</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading">Visit Us</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h3>Location</h3>
+                            <address>
+                                [Insert Salon Address]<br>
+                                [City, State ZIP Code]
+                            </address>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>Hours</h3>
+                            <div class="hours">
+                                <div class="hours-row">
+                                    <span class="day">Monday - Friday:</span>
+                                    <span class="time">[Insert Hours]</span>
+                                </div>
+                                <div class="hours-row">
+                                    <span class="day">Saturday:</span>
+                                    <span class="time">[Insert Hours]</span>
+                                </div>
+                                <div class="hours-row">
+                                    <span class="day">Sunday:</span>
+                                    <span class="time">[Insert Hours]</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>Contact</h3>
+                            <p>
+                                <strong>Phone:</strong> <a href="tel:[phone-number]">[Insert Phone Number]</a><br>
+                                <strong>Email:</strong> <a href="mailto:[email]">[Insert Email]</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-image">
+                        <!-- CONTACT IMAGE PLACEHOLDER: Exterior photo of the salon or interior showing the welcoming atmosphere - 500x400px -->
+                        <div class="contact-image-placeholder"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hair Affair</h3>
+                    <p>40+ years of professional hair care excellence</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <p>
+                        <a href="tel:[phone-number]">[Phone Number]</a><br>
+                        <a href="mailto:[email]">[Email Address]</a>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hair Affair. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
 </html>
+
